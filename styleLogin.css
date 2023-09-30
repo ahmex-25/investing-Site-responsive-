@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    
+}
+:root {
+    --prancipalColor:#17202A;
+    --MainColor:#6B778D;
+}
+body{
+    background-image: linear-gradient(red, yellow);
+    transition: 0.3s;
+    font-family: sans-serif;
+    background-image: url('Privacy\ policy-rafiki.svg');
+    scroll-behavior: smooth;
+    background-repeat: no-repeat;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+input , button {
+    outline:none;
+}
+.container {
+   min-height: 80vh;
+    overflow: hidden;
+    width: 70%;
+    margin: 6% auto;
+    background: rgb(209, 209, 209);
+    display: flex;
+    box-shadow:rgba(0, 0, 0, 0.404) -2px 3px 17px 0px;
+    
+}
+.container-left {
+    background: white;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container-left h3,.container-left h1 {color: var(--MainColor);}
+.container-left input, .container-left button {
+    width: 70%;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+}
+.container-left input {
+    margin: 10px 0;
+    background: #eeeeee;
+
+}
+.container-left button {
+    background: var(--MainColor);
+    color: white;
+}
+.container-right {
+    background: var(--MainColor);
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+}
+
+.google-signin{
+
+
+}
+.container-right button {
+    background:white;
+    color:var(--MainColor);
+    font-family: sans-serif;
+    font-size: 17px;
+    
+    padding: 16px;
+    width: 50%;
+    margin: auto;
+    border-radius: 8px;
+    border: none;
+
+}
+.container-right a {
+    color: black;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+
+    background: white;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+    
+}.container-right a:hover {
+    background: var(--MainColor);
+    transition: 0.3s;
+    color: white;
+}
+.container-left button:hover
+{
+    background: var(--HoverColor);
+    cursor: pointer;
+}
+@media screen and (max-width:600px)
+{
+    .container {
+        display: flex;
+        flex-direction: column;
+
+        height: auto;
+    }
+    .container-right,.container-left{
+        width: 100%;
+        padding: 20px;
+    }
+    .google-signin{
+        min-height: 10vh;
+        display: grid;
+        padding: 20px;
+        align-items: center;
+        
+    }
+    .google-signin p {
+        display: none;
+    }
+    #img-twiter {
+        transition: 0.3s;
+        width: 50px;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+    .container{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:425px) {
+    .container{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:375) {
+    .container{
+        width: 100%;
+    }
+    
+}
+/* 
+Your are poooooor
+
+*/
+@media screen and (max-width:250px)
+{
+body {
+display: none;
+}
+}
+.container-left input:focus{
+    background: rgb(219, 219, 219);
+    transition: 0.6s;
+}
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -15px;
+}
