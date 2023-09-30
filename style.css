@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=PT+Sans+Narrow:wght@400;700&family=Roboto:ital,wght@1,300&family=Work+Sans:wght@200;600;700;800&display=swap');
+:root {
+    --prancipalColor:#17202A;
+    --MainColor:#6B778D;
+}
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    
+}
+    body{
+        background: var(--prancipalColor);
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+
+}
+.header h1 {
+    color: white;
+}
+.header a {
+    margin: 0 10px;
+}
+
+.header .rightSec .button-one {
+    background: transparent;
+    border:none;
+    color: white;
+    margin-right: 15px;
+
+}
+.header .rightSec .join-us {
+    padding: 10px 20px;
+    background: var(--MainColor);
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* Main */
+
+.main {
+    width: 50%;
+    margin: 10% auto;
+    text-align: center;
+}
+.main-container {
+    padding: 15px;
+    color: white;
+}
+.main-container h1 {
+    font-size: 50px;
+}
+.main-container h5{
+    color: var(--MainColor);
+}
+.main-container p {
+    font-size: 20px;
+}
+.main-container button {
+    padding: 15px 30px;
+    color: white;
+    background: var(--MainColor);
+    border-radius: 4px;
+    margin: 0 5px;
+}
+.main-container .ButtonOne{
+    border: none;
+}
+.main-container .ButtonTow{
+    background: transparent;
+    border: var(--MainColor) 1px solid;
+}
+.pran {
+    justify-content: center;
+}
+.cont-2 {
+    margin-top: 10px;
+}
+.d {
+    cursor: pointer;
+}
+.ButtonOne:hover{
+    background: var(--prancipalColor);
+    transition: 0.3s;
+}
+.ButtonTow:hover {
+    background: var(--MainColor);
+    transition: 0.3s;
+}
+.rightSec .join-us:hover {
+    background: var(--prancipalColor);
+    transition: 0.3s;
+}
+/* responsive secition  */
+
+/* SMART PHONE */
+
+@media screen and (max-width:767px) {
+    .header h1 {
+        display: none;
+    }
+}
+@media screen and (max-width:425px) {
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-container h1{
+        font-size: 18px;
+    }
+    .main-container p  {
+        font-size: 10px;
+    }
+    .container-b {
+        justify-content: center;
+        
+        display: flex;
+    }
+    .d {
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    .rightSec {
+        display: none;
+    }
+}
+@media screen and (max-width:320px) {
+
+    .header {
+        display: flex;
+        justify-content: start;
+        font-size: 10px;
+    }
+
+}
